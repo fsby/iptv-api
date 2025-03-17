@@ -1,33 +1,23 @@
 import os
 import re
 
-config_dir = "config"
+config_path = "config"
 
-output_dir = "output"
+output_path = "output"
 
-whitelist_path = os.path.join(config_dir, "whitelist.txt")
+whitelist_path = os.path.join(config_path, "whitelist.txt")
 
-blacklist_path = os.path.join(config_dir, "blacklist.txt")
+blacklist_path = os.path.join(config_path, "blacklist.txt")
 
-subscribe_path = os.path.join(config_dir, "subscribe.txt")
+subscribe_path = os.path.join(config_path, "subscribe.txt")
 
-ipv4_result_path = os.path.join(output_dir, "ipv4/result.txt")
+result_path = os.path.join(output_path, "result_new.txt")
 
-ipv6_result_path = os.path.join(output_dir, "ipv6/result.txt")
+cache_path = os.path.join(output_path, "cache.pkl")
 
-rtmp_result_path = os.path.join(output_dir, "rtmp.txt")
+sort_log_path = os.path.join(output_path, "sort.log")
 
-ipv4_rtmp_result_path = os.path.join(output_dir, "ipv4/rtmp.txt")
-
-ipv6_rtmp_result_path = os.path.join(output_dir, "ipv6/rtmp.txt")
-
-result_data_path = os.path.join(output_dir, "cache/result_data.pkl")
-
-cache_path = os.path.join(output_dir, "cache/cache.pkl")
-
-sort_log_path = os.path.join(output_dir, "log/sort.log")
-
-log_path = os.path.join(output_dir, "log/log.log")
+log_path = os.path.join(output_path, "log.log")
 
 url_host_pattern = re.compile(r"((https?|rtmp|rtsp)://)?([^:@/]+(:[^:@/]*)?@)?(\[[0-9a-fA-F:]+]|([\w-]+\.)+[\w-]+)")
 

@@ -10,4 +10,3 @@ tkinter_ui
 .github
 .gitignore
 .gitattributes
-utils/nginx-rtmp-win32
